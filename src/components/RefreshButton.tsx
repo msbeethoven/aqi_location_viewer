@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/RefreshButton.css';
 
 type RefreshButtonProps = {
   onClick: () => void;
@@ -6,7 +7,7 @@ type RefreshButtonProps = {
 
 function RefreshButton({ onClick }: RefreshButtonProps) {
   return (
-    <button onClick={onClick}>
+    <button className="refresh-button" onClick={onClick}>
       Refresh Data
     </button>
   );

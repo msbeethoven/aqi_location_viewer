@@ -5,7 +5,7 @@ const API_TOKEN = process.env.REACT_APP_AQI_API_TOKEN;
 export async function fetchRandomCity(): Promise<string> {
   try {
     // Long and Lat is NYC
-    const response = await axios.get(`https://api.waqi.info/map/bounds/?token=${API_TOKEN}&latlng=40.477399,-74.259090,40.917577,-73.700272`);
+    const response = await axios.get(`https://api.waqi.info/map/bounds/?token=${API_TOKEN}&latlng=40.5,-74.9,40.8,-73.7`);
     const stations = response.data.data;
     
     if (stations.length === 0) {

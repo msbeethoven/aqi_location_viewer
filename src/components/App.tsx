@@ -1,24 +1,11 @@
-// import React, { useEffect } from 'react';
-// import { fetchAQI } from './utils/fetchAQI';
-
-// function App() {
-//   useEffect(() => {
-//     fetchAQI('newark')
-//       .then(data => console.log('data!:', data))
-//       .catch(err => console.error('Error:', err));
-//   }, []);
-
-//   return <div>App</div>;
-// }
-
-// export default App;
 import React, { useState, useEffect } from 'react';
-import AQIDisplay from './components/AQIDisplay';
-import LocationButton from './components/LocationButton';
-import RefreshButton from './components/RefreshButton';
-import { fetchAQI } from './utils/fetchAQI';
-import {fetchRandomCity} from './utils/fetchRandomCity'
-import { AQIData } from './types/AQIData';
+import AQIDisplay from './AQIDisplay';
+import LocationButton from './LocationButton';
+import RefreshButton from './RefreshButton';
+import { fetchAQI } from '../utils/fetchAQI';
+import {fetchRandomCity} from '../utils/fetchRandomCity'
+import { AQIData } from '../types/AQIData';
+import '../styles/App.css';
 
 function App() {
   const [aqiData, setAqiData] = useState<AQIData | null>(null);
@@ -33,6 +20,7 @@ function App() {
   const fetchData = async (location: string) => {
     try {
       const data = await fetchAQI(location);
+      console.log('wait a min', data)
       setAqiData(data);
       setCityName(data.city)
       setLastUpdated(new Date(data.lastUpdated).toLocaleString());
@@ -51,12 +39,13 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='center-container'>
       {aqiData && (
         <AQIDisplay
           aqi={aqiData.aqi}
           location={cityName || currentLocation}
           lastUpdated={lastUpdated}
+          measuredAt={aqiData.measuredAt}
         />
       )}
       <div>
@@ -66,9 +55,9 @@ function App() {
           isActive={currentLocation === 'here'} 
         />
         <LocationButton 
-          location="Seattle" 
-          onClick={() => setCurrentLocation('seattle')} 
-          isActive={currentLocation === 'seattle'} 
+          location="Los Angeles" 
+          onClick={() => setCurrentLocation('los angeles')} 
+          isActive={currentLocation === 'los angeles'} 
         />
         <LocationButton 
           location="Dubai" 
@@ -76,10 +65,10 @@ function App() {
           isActive={currentLocation === 'dubai'} 
         />
         <LocationButton 
-          location="Explore New York" 
+          location="Explore New Jersey and New York" 
           onClick={handleRandomCityClick} 
-          //Avoiding off chance it selects other cities
-          isActive={!['here', 'seattle', 'dubai'].includes(currentLocation)}  
+          //Avoiding off chance it selects other hard coded cities
+          isActive={!['here', 'los angeles', 'dubai'].includes(currentLocation)}  
         />
       </div>
       <RefreshButton onClick={() => fetchData(currentLocation)} />

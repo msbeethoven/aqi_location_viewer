@@ -1,0 +1,15 @@
+.location-button {
+  font-weight: normal;
+  background-color: #343a40;
+  color: #ddd;
+}
+
+.location-button.active {
+  font-weight: bold;
+  background-color: #8f34c8;
+  color: #fff;
+}
+
+.location-button:hover {
+  background-color: #5b456a;
+}

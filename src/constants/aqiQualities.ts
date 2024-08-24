@@ -1,4 +1,4 @@
-// from https://aqicn.org/scale/
+// From https://aqicn.org/scale/
 export const AQI_QUALITY = {
   GOOD: 'Good',
   MODERATE: 'Moderate',

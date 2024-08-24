@@ -1,0 +1,45 @@
+.aqi-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.aqi-container.fade-in {
+  opacity: 1;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4; 
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--aqi-color);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+a {
+  color: #569cd6; 
+}
+
+a:hover {
+  color: #9cdcfe;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

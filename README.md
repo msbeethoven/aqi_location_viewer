@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# 🌟 Air Quality Index (AQI) Web App 🌟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Air Quality Index (AQI) Web App! This app lets you check the current air quality for various locations, with an option to explore random cities around the New Jersey and New York area. 🚀
 
-## Available Scripts
+## 🛠️ Tech Stack
 
-In the project directory, you can run:
+- **React**: For building the user interface
+- **TypeScript**: For type safety
+- **API**: https://api.waqi.info/feed/{CITY}/?token={TOKEN}
+Fetches AQI data based on a few parameters
+- **Axios**: For easy fetching
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run this app locally, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Clone the Repository**
 
-### `npm test`
+    `git clone` https://github.com/msbeethoven/aqi_location_viewer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the Project Directory**
 
-### `npm run build`
+    `cd aqi_location_viewer`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install Dependencies**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Start the Development Server**
 
-### `npm run eject`
+    `npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    The app will be available at http://localhost:3000.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Open Your Browser**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    Visit http://localhost:3000 to see the app in action!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ✨ Potential Expansions
 
-## Learn More
+If I had more time, I might consider:
+- More Locations: Expand the list of predefined locations or integrate a broader city database.
+- Enhanced Error Handling: Display user-friendly messages when data fetching fails.
+- Customizable Display Options: Allow users to choose different display formats or themes.
+- Interactive Maps: Integrate a map to show AQI data visually for selected locations, while keeping accessibility in mind.
+- User Authentication: Allow users to save favorite locations or preferences.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

@@ -1,0 +1,8 @@
+.refresh-button {
+  background-color: #218838;
+  color: #1e1e1e;
+}
+
+.refresh-button:hover {
+  background-color: #8ACE00;
+}
