@@ -34,7 +34,7 @@ To run this app locally, follow these steps:
 
 5. **Open Your Browser**
 
-    Visit http://localhost:3000 to see the app in action!
+    Visit http://localhost:3000 to see the app in action!  
     Or don't want to bother with all that? No problem, visit it at https://aqi-location-viewer.netlify.app/! 
 
 ## ✨ Potential Expansions
