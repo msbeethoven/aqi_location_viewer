@@ -1,4 +1,4 @@
-# 🌟 Air Quality Index (AQI) Web App 🌟
+# 🌬️ Air Quality Index (AQI) Web App 🌬️
 
 Welcome to the Air Quality Index (AQI) Web App! This app lets you check the current air quality for various locations, with an option to explore random cities around the New Jersey and New York area. 🚀
 
