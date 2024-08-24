@@ -14,7 +14,6 @@ export async function fetchRandomCity(): Promise<string> {
 
     const randomIndex = Math.floor(Math.random() * stations.length);
     const randomCity = stations[randomIndex].station.name;
-    console.log('this is being read')
     return randomCity;
   } catch (error) {
     console.error('Error fetching random city:', error);

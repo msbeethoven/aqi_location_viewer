@@ -20,7 +20,6 @@ function App() {
   const fetchData = async (location: string) => {
     try {
       const data = await fetchAQI(location);
-      console.log('wait a min', data)
       setAqiData(data);
       setCityName(data.city)
       setLastUpdated(new Date(data.lastUpdated).toLocaleString());
