@@ -41,8 +41,5 @@ To run this app locally, follow these steps:
 
 If I had more time, I might consider:
 - More Locations: Expand the list of predefined locations or integrate a broader city database.
-- Enhanced Error Handling: Display user-friendly messages when data fetching fails.
-- Customizable Display Options: Allow users to choose different display formats or themes.
 - Interactive Maps: Integrate a map to show AQI data visually for selected locations, while keeping accessibility in mind.
 - User Authentication: Allow users to save favorite locations or preferences.
-
