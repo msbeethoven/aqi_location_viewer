@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { getAQIQuality } from '../utils/getAQIQuality';
 import { aqiColor } from '../utils/aqiColor';

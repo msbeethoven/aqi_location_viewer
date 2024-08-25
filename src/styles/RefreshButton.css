@@ -1,6 +1,7 @@
 .refresh-button {
   background-color: #218838;
   color: #1e1e1e;
+  justify-content: center;
 }
 
 .refresh-button:hover {
